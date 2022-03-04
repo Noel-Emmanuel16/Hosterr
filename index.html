@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosterr Waitlist Page</title>
+    <link rel="stylesheet" href="styles/app.css" />
+    <script src="https://kit.fontawesome.com/1b145ba163.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="fixed-container">
+      <nav>
+        <div>
+          <i class="fa-solid fa-rocket-launch"></i>
+          <div class="logo">Hosterr</div>
+          <button class="hire-btn">Hosterr is hiring!</button>
+        </div>
+        <ul>
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Find Domain</a></li>
+          <li><a href="#">Why Hosterr</a></li>
+        </ul>
+        <div class="btn-group">
+          <button class="signin">Sign in</button>
+          <button class="signup">Join Waitlist</button>
+        </div>
+        <div class="hamburger-menu">
+          <img src="./Assets/Hamburger Menu.svg" alt="" />
+        </div>
+
+        <div class="mobile-menu">
+          <div class="close-btn">&times;</div>
+          <ul class="menu">
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Find Domain</a></li>
+            <li><a href="#">Why Hosterr</a></li>
+          </ul>
+          <div class="mobile-btn-group">
+            <button class="signin">Sign in</button>
+            <button class="signup">Join Waitlist</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="headline">
+          <h1>
+            Host your <br />website in less<br />
+            than 5 minutes.
+          </h1>
+          <p>
+            With Hosterr, get your website running in no less than 5 minutes
+            with the most competitive pricing packages available online.
+          </p>
+          <form>
+            <input type="text" placeholder="Enter email-address" /><button
+              class="signup"
+            >
+              Join Waitlist
+            </button>
+          </form>
+          <p>
+            <img src="./Assets/Checkmark.svg" alt="" />
+            <span>No spam, ever. Unsubscribe anytime.</span>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./Assets/Blue Shape.svg" alt="blue_shape" />
+          <img src="./Assets/Pink Shape.svg" alt="pink_shape" />
+          <img src="./Assets/Purple Shape.svg" alt="purple_shape" />
+          <img src="./Assets/Hero Image (Model).png" alt="hero_image" />
+        </div>
+      </div>
+
+      <footer>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+        <div>
+          <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="avatar_image" />
+          <p>
+            <span>Have any questions?</span>
+            <span>Talk to a specialist.</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const closeBtn = document.querySelector(".close-btn");
+    const menu = document.querySelector(".mobile-menu");
+
+    hamburgerMenu.addEventListener("click", () => {
+      menu.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.style.display = "none";
+    });
+  </script>
+  
+</html>
